@@ -1,0 +1,11 @@
+{
+  "name": "search-engine",
+  "version": "1.0.0",
+  "description": "this web app is made to demonstrate ajax,express,templating,routes and authentication",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"error\""
+  },
+  "author": "dagim amare",
+  "license": "ISC"
+}

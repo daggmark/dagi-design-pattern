@@ -1,0 +1,45 @@
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>SimpleSearch engine</title>
+
+    <link rel="stylesheet" href="../public/css/w3.css"/>
+</head>
+
+<body style="margin-left:30%;">  
+        
+    <div class="w3-card-4 w3-red w3-margin-left w3-margin-top" style="width:800px;">
+        <div class="w3-blue w3-container">
+            <h2 style="display:inline-block;">Search</h2>
+            <button class="w3-btn w3-round w3-blue" style="margin-left:40px;" onclick="handleHome()"> Home <span>&#10133</span></button>
+            <button class="w3-btn w3-round w3-blue" style="margin-left:40px;" onclick="handleRegister()"> Register <span>&#10133</span></button>
+            <button class="w3-btn w3-round w3-blue" style="margin-left:40px;" onclick="handleEdit()"> Edit <span style="font-size:16px;">&#x270D</span> </button>
+            <button class="w3-btn w3-round w3-teal" style="margin-left:120px;" onclick="handleLogout()"> Logout <span>&#10133</span></button>
+        </div>
+    <div class="w3-white w3-container">
+            <h4><span>&#9998</span> word</h4>
+            <input id = "key" name = "username" type="text" class = "w3-input w3-margin-bottom" required>
+            <input type="submit" class = "w3-btn w3-round w3-margin-bottom" value="submit" onclick="handleAddAsync();">
+    </div>  
+    <div class="w3-white w3-container w3-margin-left w3-text-green w3-padding-16 w3-large" id="messageBoard">
+        message comes here!
+    </div>
+  </div>
+   
+    <script src="../public/js/jquery-1.11.0.min.js"></script>
+    <script src="../public/js/add.js"></script>
+    <script src="../public/js/register.js"></script>
+    
+    <script src="../public/js/jquery-1.11.0.min.js"></script>
+<script src="../public/js/register.js"></script>
+<script src="../public/js/add.js"></script>
+<script src="../public/js/index.js"></script>
+<script src="../public/js/search.js"></script>
+    
+</body>
+
+</html>

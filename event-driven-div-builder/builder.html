@@ -1,0 +1,58 @@
+<html lang="en">
+        
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <title>builder</title>
+    
+        <link rel="stylesheet" href="./style.css"/>
+    
+    </head>
+    <body>
+         <div class="w3-card-4" style="position:absolute;width:600px;">
+
+<div class="w3-container w3-green">
+  <h2 id="editedName" style="display:inline-block;"> header</h2>
+                <button id = "click" class="w3-btn w3-round w3-blue" style="margin-left:20px;" onclick="handleEvent(this)"> click <span>&#10133</span></button>
+                <button id = "drag"  class="w3-btn w3-round w3-blue"  onclick="handleEvent(this)"> Drag <span>&#10133</span></button>
+                <button id = "resize" class="w3-btn w3-round w3-blue"  onclick="handleEvent(this)"> Resize <span style="font-size:16px;">&#x270D</span> </button>
+                <button id = "location" class="w3-btn w3-round w3-teal"  onclick="handleEvent(this)"> location <span>&#10133</span></button>
+</div>
+
+<form class="w3-container w3-padding">
+
+<label class="w3-label">width</label>
+<input id="width" onkeyup="handleTwoWaySizeBinding(this);" class="w3-input" type="text">
+
+<label  class="w3-label">Height</label>
+<input id = "height" onkeyup="handleTwoWaySizeBinding(this);" class="w3-input" type="text">
+
+<div class="w3-row-padding" style="margin-top:10px">
+  <div class="w3-fourth">
+    <label  class="w3-label">Color:</label>
+  </div>
+  <div class="w3-fourth">
+    <input id="color" contenteditable="true" oninput = "handleTwoWaySizeBinding(this);" class="w3-input w3-border" type="color" placeholder="color">
+  </div>
+  <div class="w3-fourth">
+    <input id="offsetX" onkeyup="handleTwoWaySizeBinding(this);" class="w3-input w3-border" type="text" placeholder="offsetX">
+  </div>
+   <div class="w3-fourth">
+    <input id="offsetY" onkeyup="handleTwoWaySizeBinding(this);" class="w3-input w3-border" type="text" placeholder="offsetY">
+  </div>
+</div>
+
+
+</form>
+
+</div>
+       
+        <script src="./builder.js"></script>
+        
+    </body>
+    
+    
+</html>
